@@ -3,7 +3,7 @@
         <div class="box backside" @click="openItem" v-if="!open" key="1"></div>
         <div class="box frontside" v-else key="2">
             <h2>{{ number }}</h2>
-            <img :src="'src/images/' + suit" height="100" width="100">
+            <img :src="'src/images/' + suit" height="100" width="100" rel="preload">
         </div>
     </transition>
 </template>
